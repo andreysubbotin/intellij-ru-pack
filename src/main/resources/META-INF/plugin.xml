@@ -2,17 +2,10 @@
 <idea-plugin>
     <id>com.github.andreysubbotin.intellijrupack</id>
     <name>intellij-ru-pack</name>
-    <vendor>andreysubbotin</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.andreysubbotin.intellijrupack.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <languageBundle locale="ru-RU"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.andreysubbotin.intellijrupack.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
